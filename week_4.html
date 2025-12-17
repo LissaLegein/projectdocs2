@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 4</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <style>
+      /* Lightbox overlay */
+      .lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+      }
+      .lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 30px rgba(255, 127, 17, 0.7);
+      }
+    </style>
+  </head>
+  <body class="bg-[#623cea]">
+    <div class="max-w-[65vw] mx-auto py-10">
+      <a
+        href="/public/index.html"
+        class="font-['Barriecito'] text-[#E7DFC6] text-2xl hover:underline mb-8 block"
+        >← HOME</a
+      >
+
+      <h1 class="text-4xl font-['Barriecito'] text-[#E7DFC6] mb-6 tracking-wide">
+        Week 4 — Basisprincipes van coderen en publicatie
+      </h1>
+
+      <p class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed">
+        In week 4 werden de basisprincipes van coderen behandeld, inclusief het
+        werken met een testomgeving, handige softwaretools, gestructureerde
+        code, en het gebruik van GitHub en Netlify om ontwerpen te publiceren.
+      </p>
+      <p class="text-lg font-['Inter'] font-medium text-[#e7dfc6] mb-4 leading-relaxed">
+        Zelf paste ik deze week toe door mijn Figma-prototypes voor te bereiden
+        voor publicatie en na te denken over hoe ik mijn ontwerp documentatie
+        online toegankelijk kon maken. Op basis van klasfeedback besloot ik ook
+        kleuren en lay-out aan te passen: subtiele lijnen en duidelijke
+        afbakening werden toegevoegd voor betere structuur en overzicht.
+      </p>
+
+      <!-- Perronscherm -->
+      <p class="text-3xl font-['Barriecito'] font-medium mt-20 text-[#e7dfc6] mb-4 leading-relaxed">
+        Perronscherm
+      </p>
+      <img src="assets/blauw2.png" alt="Perron" class="w-64 rounded-md cursor-pointer lightbox-trigger mb-10" />
+
+      <!-- Overzichtscherm -->
+      <p class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed">
+        Overzichtscherm
+      </p>
+      <img src="assets/blauw1.png" alt="Overzicht" class="w-96 rounded-md cursor-pointer lightbox-trigger mb-10" />
+
+      <!-- Wagonscherm -->
+      <p class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed">
+        Wagonscherm
+      </p>
+      <img src="assets/blauw3.png" alt="Wagon" class="w-96 rounded-md cursor-pointer lightbox-trigger mb-10" />
+    </div>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox flex">
+      <img src="" alt="Vergrote afbeelding" id="lightbox-img" />
+    </div>
+
+    <script>
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const triggers = document.querySelectorAll('.lightbox-trigger');
+
+      triggers.forEach(img => {
+        img.addEventListener('click', () => {
+          lightbox.style.display = 'flex';
+          lightboxImg.src = img.src;
+        });
+      });
+
+      lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+        lightboxImg.src = '';
+      });
+    </script>
+  </body>
+</html>
