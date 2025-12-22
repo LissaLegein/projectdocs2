@@ -29,6 +29,13 @@
     </style>
   </head>
   <body class="bg-[#623cea]">
+    <div
+      class="fixed top-3 right-4 text-[10px] font-['Inter'] text-white z-50"
+      style="color: white"
+    >
+      Lissa Legein · 1GDM2
+    </div>
+
     <div class="max-w-[65vw] mx-auto py-10">
       <a
         href="index.html"
@@ -36,40 +43,90 @@
         >← HOME</a
       >
 
-      <h1 class="text-4xl font-['Barriecito'] text-[#E7DFC6] mb-6 tracking-wide">
-        Week 8 — Tailwind & geavanceerde HTML/CSS
+      <h1
+        class="text-4xl font-['Barriecito'] text-[#E7DFC6] mb-6 tracking-wide"
+      >
+        Week 8 — Van prototype naar interactieve mobiele applicatie
       </h1>
 
-      <p class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed">
-        In de laatste week lag de focus op Tailwind CSS in combinatie met Figma
-        en het verder verfijnen van responsive design. We bespraken hoe het
-        concept van Tailwind in prototypes toegepast kan worden en hoe dit
-        aansluit bij de visuele stijl in Figma.
+      <p
+        class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed"
+      >
+        In de achtste week lag de focus op het verder uitwerken en finaliseren
+        van het prototype, met een duidelijke stap richting een mobiele
+        applicatie. Ik combineerde mijn kennis van HTML, CSS en Tailwind met
+        mijn eerdere ontwerpen in Figma om tot een consistent, realistisch en
+        interactief geheel te komen.
       </p>
-      <p class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed">
-        Ik gebruikte deze kennis om mijn project definitief te stylen, kleuren,
-        typografie en lay-out af te stemmen, en de schermen volledig responsive
-        te maken voor verschillende apparaten. De nadruk lag op het combineren
-        van visuele duidelijkheid met toegankelijkheid voor alle gebruikers.
+      <p
+        class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed"
+      >
+        Ik vertaalde mijn bestaande treinschermen naar mobiele schermen, waarbij
+        ik werkte met het frame van een iPhone 16 om een realistische
+        gebruikerservaring te simuleren. Eerst zette ik de drie belangrijkste
+        treinschermen om naar het telefoonschermformaat. Daarna breidde ik het
+        prototype uit met extra tussenschermen, zodat het ontwerp aanvoelde als
+        een volwaardige applicatie. Zo ontwierp ik onder andere een loginpagina,
+        een ticketpagina, een favorietenpagina en een informatiepagina, allemaal
+        in dezelfde visuele stijl en structuur.
+      </p>
+
+      <p
+        class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed"
+      >
+        Vervolgens gaf ik elke pagina een duidelijke functie en verbond ik de
+        schermen met elkaar om een logische gebruikersflow te creëren. Door
+        interactieve elementen toe te voegen, zoals inloggen en navigeren tussen
+        verschillende schermen, begon het prototype steeds meer aan te voelen
+        als een echte, functionerende app.
+      </p>
+
+      <p
+        class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed"
+      >
+        Tijdens deze week lag de nadruk sterk op gebruiksvriendelijkheid,
+        overzicht en consistentie. Ik zorgde ervoor dat de navigatie intuïtief
+        bleef en dat de informatie helder gepresenteerd werd, zowel op grote
+        treinschermen als op kleinere mobiele schermen. Deze stap vormde een
+        belangrijke brug tussen concept, design en interactie, en bracht het
+        project naar een afgerond en samenhangend eindresultaat.
       </p>
 
       <!-- Perronscherm -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-20 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-20 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Perronscherm - Iphone 16
       </p>
-      <img src="assets/blauw5.png" alt="Perron" class="w-64 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/blauw5.png"
+        alt="Perron"
+        class="w-64 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
 
       <!-- Overzichtscherm -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Overzichtscherm - Iphone 16
       </p>
-      <img src="assets/blauw4.png" alt="Overzicht" class="w-64 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/blauw4.png"
+        alt="Overzicht"
+        class="w-64 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
 
       <!-- Wagonscherm -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Wagonscherm - Iphone 16
       </p>
-      <img src="assets/blauw6.png" alt="Wagon" class="w-72 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/blauw6.png"
+        alt="Wagon"
+        class="w-72 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
     </div>
 
     <!-- Lightbox overlay -->
@@ -78,21 +135,30 @@
     </div>
 
     <script>
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const triggers = document.querySelectorAll('.lightbox-trigger');
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const triggers = document.querySelectorAll(".lightbox-trigger");
 
-      triggers.forEach(img => {
-        img.addEventListener('click', () => {
-          lightbox.style.display = 'flex';
+      triggers.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightbox.style.display = "flex";
           lightboxImg.src = img.src;
         });
       });
 
-      lightbox.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-        lightboxImg.src = '';
+      lightbox.addEventListener("click", () => {
+        lightbox.style.display = "none";
+        lightboxImg.src = "";
       });
     </script>
+    <footer class="text-center text-[10px] font-['Inter'] text-white py-4">
+      <a
+        href="https://github.com/LissaLegein/projectdocs2#"
+        target="_blank"
+        class="hover:underline"
+      >
+        GitHub repository
+      </a>
+    </footer>
   </body>
 </html>

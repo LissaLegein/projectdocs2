@@ -29,6 +29,13 @@
     </style>
   </head>
   <body class="bg-[#623cea]">
+    <div
+      class="fixed top-3 right-4 text-[10px] font-['Inter'] text-white z-50"
+      style="color: white"
+    >
+      Lissa Legein · 1GDM2
+    </div>
+
     <div class="max-w-[65vw] mx-auto py-10">
       <a
         href="index.html"
@@ -36,16 +43,22 @@
         >← HOME</a
       >
 
-      <h1 class="text-4xl font-['Barriecito'] text-[#E7DFC6] mb-6 tracking-wide">
+      <h1
+        class="text-4xl font-['Barriecito'] text-[#E7DFC6] mb-6 tracking-wide"
+      >
         Week 4 — Basisprincipes van coderen en publicatie
       </h1>
 
-      <p class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed">
+      <p
+        class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed"
+      >
         In week 4 werden de basisprincipes van coderen behandeld, inclusief het
         werken met een testomgeving, handige softwaretools, gestructureerde
         code, en het gebruik van GitHub en Netlify om ontwerpen te publiceren.
       </p>
-      <p class="text-lg font-['Inter'] font-medium text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-lg font-['Inter'] font-medium text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Zelf paste ik deze week toe door mijn Figma-prototypes voor te bereiden
         voor publicatie en na te denken over hoe ik mijn ontwerp documentatie
         online toegankelijk kon maken. Op basis van klasfeedback besloot ik ook
@@ -54,22 +67,40 @@
       </p>
 
       <!-- Perronscherm -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-20 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-20 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Perronscherm
       </p>
-      <img src="assets/blauw2.png" alt="Perron" class="w-64 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/blauw2.png"
+        alt="Perron"
+        class="w-64 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
 
       <!-- Overzichtscherm -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Overzichtscherm
       </p>
-      <img src="assets/blauw1.png" alt="Overzicht" class="w-96 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/blauw1.png"
+        alt="Overzicht"
+        class="w-96 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
 
       <!-- Wagonscherm -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Wagonscherm
       </p>
-      <img src="assets/blauw3.png" alt="Wagon" class="w-96 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/blauw3.png"
+        alt="Wagon"
+        class="w-96 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
     </div>
 
     <!-- Lightbox overlay -->
@@ -78,21 +109,30 @@
     </div>
 
     <script>
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const triggers = document.querySelectorAll('.lightbox-trigger');
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const triggers = document.querySelectorAll(".lightbox-trigger");
 
-      triggers.forEach(img => {
-        img.addEventListener('click', () => {
-          lightbox.style.display = 'flex';
+      triggers.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightbox.style.display = "flex";
           lightboxImg.src = img.src;
         });
       });
 
-      lightbox.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-        lightboxImg.src = '';
+      lightbox.addEventListener("click", () => {
+        lightbox.style.display = "none";
+        lightboxImg.src = "";
       });
     </script>
+    <footer class="text-center text-[10px] font-['Inter'] text-white py-4">
+      <a
+        href="https://github.com/LissaLegein/projectdocs2#"
+        target="_blank"
+        class="hover:underline"
+      >
+        GitHub repository
+      </a>
+    </footer>
   </body>
 </html>

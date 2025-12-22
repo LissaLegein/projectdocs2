@@ -29,6 +29,13 @@
     </style>
   </head>
   <body class="bg-[#623cea]">
+    <div
+      class="fixed top-3 right-4 text-[10px] font-['Inter'] text-white z-50"
+      style="color: white"
+    >
+      Lissa Legein · 1GDM2
+    </div>
+
     <div class="max-w-[65vw] mx-auto py-10">
       <a
         href="index.html"
@@ -36,16 +43,22 @@
         >← HOME</a
       >
 
-      <h1 class="text-4xl font-['Barriecito'] text-[#E7DFC6] mb-6 tracking-wide">
+      <h1
+        class="text-4xl font-['Barriecito'] text-[#E7DFC6] mb-6 tracking-wide"
+      >
         Week 3 — Midi- en hi-fi prototypes
       </h1>
 
-      <p class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed">
+      <p
+        class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed"
+      >
         In week 3 werd het concept van midi- en high-fidelity prototypes
         besproken. We werkten van eenvoudige low-fidelity schetsen toe naar meer
         uitgewerkte digitale prototypes.
       </p>
-      <p class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed">
+      <p
+        class="text-lg font-['Inter'] font-medium text-[#E7DFC6] mb-4 leading-relaxed"
+      >
         Ik zette mijn schetsen om in eerste digitale prototypes in Figma,
         waarbij ik aandacht besteedde aan gebruiksvriendelijkheid, overzicht en
         interactie. Ik experimenteerde met kleurgebruik en lettertypes, zodat de
@@ -56,28 +69,52 @@
       </p>
 
       <!-- Perronscherm -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-20 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-20 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Perronscherm
       </p>
-      <img src="assets/rood3.png" alt="Perron" class="w-56 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/rood3.png"
+        alt="Perron"
+        class="w-56 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
 
       <!-- Overzichtscherm -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Overzichtscherm
       </p>
-      <img src="assets/rood2.png" alt="Overzicht" class="w-72 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/rood2.png"
+        alt="Overzicht"
+        class="w-72 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
 
       <!-- Wagonscherm -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Wagonscherm
       </p>
-      <img src="assets/rood1.png" alt="Wagon" class="w-64 h-48 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/rood1.png"
+        alt="Wagon"
+        class="w-64 h-48 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
 
       <!-- Extra -->
-      <p class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed">
+      <p
+        class="text-3xl font-['Barriecito'] font-medium mt-10 text-[#e7dfc6] mb-4 leading-relaxed"
+      >
         Extra
       </p>
-      <img src="assets/rood4.png" alt="Extra" class="w-64 h-48 rounded-md cursor-pointer lightbox-trigger mb-10" />
+      <img
+        src="assets/rood4.png"
+        alt="Extra"
+        class="w-64 h-48 rounded-md cursor-pointer lightbox-trigger mb-10"
+      />
     </div>
 
     <!-- Lightbox overlay -->
@@ -86,21 +123,30 @@
     </div>
 
     <script>
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const triggers = document.querySelectorAll('.lightbox-trigger');
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const triggers = document.querySelectorAll(".lightbox-trigger");
 
-      triggers.forEach(img => {
-        img.addEventListener('click', () => {
-          lightbox.style.display = 'flex';
+      triggers.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightbox.style.display = "flex";
           lightboxImg.src = img.src;
         });
       });
 
-      lightbox.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-        lightboxImg.src = '';
+      lightbox.addEventListener("click", () => {
+        lightbox.style.display = "none";
+        lightboxImg.src = "";
       });
     </script>
+    <footer class="text-center text-[10px] font-['Inter'] text-white py-4">
+      <a
+        href="https://github.com/LissaLegein/projectdocs2#"
+        target="_blank"
+        class="hover:underline"
+      >
+        GitHub repository
+      </a>
+    </footer>
   </body>
 </html>
